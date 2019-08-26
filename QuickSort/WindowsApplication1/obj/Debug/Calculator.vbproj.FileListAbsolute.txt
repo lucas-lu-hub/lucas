@@ -1,0 +1,11 @@
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\obj\Debug\Calculator.vbprojResolveAssemblyReference.cache
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\obj\Debug\Calculator.vbproj.GenerateResource.Cache
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+c:\users\lucaslu\documents\visual studio 2015\Projects\QuickSort\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
