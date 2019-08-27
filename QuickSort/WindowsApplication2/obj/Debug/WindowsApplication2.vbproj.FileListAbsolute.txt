@@ -1,0 +1,11 @@
+F:\gitResponsitory\QuickSort\WindowsApplication2\bin\Debug\WindowsApplication2.exe.config
+F:\gitResponsitory\QuickSort\WindowsApplication2\bin\Debug\WindowsApplication2.exe
+F:\gitResponsitory\QuickSort\WindowsApplication2\bin\Debug\WindowsApplication2.pdb
+F:\gitResponsitory\QuickSort\WindowsApplication2\bin\Debug\WindowsApplication2.xml
+F:\gitResponsitory\QuickSort\WindowsApplication2\obj\Debug\WindowsApplication2.vbprojResolveAssemblyReference.cache
+F:\gitResponsitory\QuickSort\WindowsApplication2\obj\Debug\WindowsApplication2.Form1.resources
+F:\gitResponsitory\QuickSort\WindowsApplication2\obj\Debug\WindowsApplication2.Resources.resources
+F:\gitResponsitory\QuickSort\WindowsApplication2\obj\Debug\WindowsApplication2.vbproj.GenerateResource.Cache
+F:\gitResponsitory\QuickSort\WindowsApplication2\obj\Debug\WindowsApplication2.exe
+F:\gitResponsitory\QuickSort\WindowsApplication2\obj\Debug\WindowsApplication2.xml
+F:\gitResponsitory\QuickSort\WindowsApplication2\obj\Debug\WindowsApplication2.pdb
