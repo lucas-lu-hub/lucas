@@ -106,7 +106,7 @@
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         Me.resultText.Text = "0"
         If reOperator Then
             Dim index = Me.inputText.Text.LastIndexOf(" ")
@@ -117,7 +117,7 @@
         needRefresh = True
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         Me.inputText.Text = ""
         Me.resultText.Text = ""
         opResult = 0
@@ -225,13 +225,15 @@
         needRefresh = False
         reOperator = True
     End Sub
-
+    '正负
     Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
         If Me.resultText.Text.StartsWith("-") Then
             Me.resultText.Text = Me.resultText.Text.Substring(1)
             Return
         End If
         Me.resultText.Text = "-" + Me.resultText.Text
+        needRefresh = False
+        reOperator = False
     End Sub
     Private Function operation(ByVal a As Double, ByVal b As Double, op As Char) As Double
         Dim result As Double
@@ -249,4 +251,8 @@
         End Select
         Return result
     End Function
+
+    Private Sub Button29_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
