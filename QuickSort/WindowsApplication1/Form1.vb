@@ -13,9 +13,10 @@
     Private exception As Boolean = False
     Private opResult As Double
     Private operate As String
+
+    Private texts As String() = {"%", "CE", "C", "X", "÷", "√", "7", "8", "9", "×", "x²", "4", "5", "6", "-", "x³", "1", "2", "3", "+", "¹/x", "±", "0", ".", "="}
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Focus()
-        Dim texts As String() = {"%", "CE", "C", "X", "÷", "√", "7", "8", "9", "×", "x²", "4", "5", "6", "-", "x³", "1", "2", "3", "+", "1/x", "±", "0", ".", "="}
         Dim controls = Me.TableLayoutPanel1.Controls
         For j As Int32 = controls.Count - 1 To 0 Step -1
             If TypeOf controls(j) Is Button Then
@@ -74,7 +75,7 @@
     '数字
     Private Sub Number_Click(sender As Object, e As EventArgs)
         '如果重新输入则先清空result的值
-        If needRefresh Then
+        If needRefresh Or Me.resultText.Text = "0" Then
             Me.resultText.Text = ""
             needRefresh = False
         End If
@@ -83,7 +84,6 @@
             Me.inputText.Text = Me.inputText.Text.Substring(0, index)
             Me.resultText.Text = ""
             reOperator = False
-            'to do history
         End If
         Me.resultText.Text += sender.Text
     End Sub
@@ -112,13 +112,15 @@
             End If
             Return
         End If
+
         If Double.TryParse(Me.resultText.Text, re) Then
             opResult = operation(opResult, re, operate)
+            operate = sender.Text
             Me.resultText.Text = opResult.ToString()
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub CE_Click(sender As Object, e As EventArgs) Handles CE.Click
         Me.resultText.Text = "0"
         If reOperator Then
             Dim index = Me.inputText.Text.LastIndexOf(" ")
@@ -130,7 +132,7 @@
         reOperator = False
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub C_Click(sender As Object, e As EventArgs) Handles C.Click
         Me.inputText.Text = ""
         Me.resultText.Text = ""
         opResult = 0
@@ -139,9 +141,20 @@
         reOperator = False
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) 
+    Private Sub DeleOne_Click(sender As Object, e As EventArgs) Handles DeleOne.Click
+        If needRefresh Or reOperator Then
+            Return
+        End If
         Dim text = Me.resultText.Text
-        Me.resultText.Text = text.Substring(0, text.Length - 1)
+        ' to do
+        If text = "0" Then
+            Return
+        End If
+        If text.Length = 1 Then
+            Me.resultText.Text = "0"
+        Else
+            Me.resultText.Text = text.Substring(0, text.Length - 1)
+        End If
     End Sub
 
     Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
@@ -184,7 +197,7 @@
 
     End Sub
     '.
-    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+    Private Sub Dot_Click(sender As Object, e As EventArgs) Handles Dot.Click
         If needRefresh Or Me.resultText.Text = "0" Then
             Me.resultText.Text = "0" + sender.Text
             needRefresh = False
@@ -244,10 +257,10 @@
         reOperator = True
     End Sub
 
-    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Plus_Minus.Click
         If Me.resultText.Text.StartsWith("-") Then
             Me.resultText.Text = Me.resultText.Text.Substring(1)
-        Else
+        ElseIf Me.resultText.Text <> "0" Then
             Me.resultText.Text = "-" + Me.resultText.Text
         End If
         If reOperator Then
@@ -332,7 +345,7 @@
             Else
                 str = text.Substring(i * len, len)
             End If
-            Me.FlowLayoutPanel2.Controls.Add(CreateTextBoxOP(str, Me.TabPage1.Width - 5))
+            Me.FlowLayoutPanel2.Controls.Add(CreateTextBoxOP(str, Me.TabPage1.Width - 20))
         Next
         Dim re As Double
         If String.IsNullOrEmpty(operate) Then
@@ -345,7 +358,7 @@
         If Double.TryParse(Me.resultText.Text, re) Then
             opResult = operation(opResult, re, operate)
             Me.resultText.Text = opResult.ToString()
-            Me.FlowLayoutPanel2.Controls.Add(CreateTextBoxRS(opResult.ToString(), Me.TabControl1.Width - 5))
+            Me.FlowLayoutPanel2.Controls.Add(CreateTextBoxRS(opResult.ToString(), Me.TabControl1.Width - 20))
         End If
         opResult = 0
         operate = ""
@@ -373,5 +386,131 @@
         textBox.ReadOnly = True
         textBox.Text = str
         textBox.Size = New System.Drawing.Size(width, 29)
+        textBox.TextAlign = HorizontalAlignment.Right
+        Return textBox
     End Function
+    'M+
+    Private Sub MPlus_Click(sender As Object, e As EventArgs) Handles MPlus.Click
+        Dim controls = Me.FlowLayoutPanel3.Controls
+        If controls.Count <= 0 Then
+            Me.FlowLayoutPanel3.Controls.Add(CreateTextBoxRS(Me.resultText.Text, Me.FlowLayoutPanel3.Width - 20))
+        Else
+            Dim op1 As Double
+            Dim op2 As Double
+            If Double.TryParse(Me.resultText.Text, op1) And Double.TryParse(controls(0).Text, op2) Then
+                controls(0).Text = (op1 + op2).ToString()
+            End If
+        End If
+        needRefresh = True
+        Me.MCButton.Enabled = True
+        Me.MRButton.Enabled = True
+    End Sub
+    'M-
+    Private Sub Button49_Click(sender As Object, e As EventArgs) Handles MMinus.Click
+        Dim controls = Me.FlowLayoutPanel3.Controls
+        Dim re As Double
+        If controls.Count <= 0 And Double.TryParse(Me.resultText.Text, re) Then
+            Me.FlowLayoutPanel3.Controls.Add(CreateTextBoxRS((0 - re).ToString(), Me.FlowLayoutPanel3.Width - 20))
+        Else
+            Dim op1 As Double
+            Dim op2 As Double
+            If Double.TryParse(Me.resultText.Text, op1) And Double.TryParse(controls(0).Text, op2) Then
+                controls(0).Text = (op2 - op1).ToString()
+            End If
+        End If
+        needRefresh = True
+        Me.MCButton.Enabled = True
+        Me.MRButton.Enabled = True
+    End Sub
+    'MS
+    Private Sub MSButton_Click(sender As Object, e As EventArgs) Handles MSButton.Click
+        Dim controls As Control.ControlCollection = Me.FlowLayoutPanel3.Controls
+        Me.FlowLayoutPanel3.Controls.Add(CreateTextBoxRS(Me.resultText.Text, Me.FlowLayoutPanel3.Width - 20))
+        controls(controls.Count - 1).BringToFront()
+        needRefresh = True
+        Me.MCButton.Enabled = True
+        Me.MRButton.Enabled = True
+    End Sub
+
+    Private Sub MRButton_Click(sender As Object, e As EventArgs) Handles MRButton.Click
+        Dim controls As Control.ControlCollection = Me.FlowLayoutPanel3.Controls
+        If reOperator Then
+            Dim index = Me.inputText.Text.LastIndexOf(" ")
+            Me.inputText.Text = Me.inputText.Text.Substring(0, index)
+            Me.resultText.Text = ""
+            reOperator = False
+        End If
+
+        Me.resultText.Text = controls(0).Text
+        needRefresh = True
+    End Sub
+
+    Private Sub MCButton_Click(sender As Object, e As EventArgs) Handles MCButton.Click
+        Me.FlowLayoutPanel3.Controls.Clear()
+        Me.MCButton.Enabled = False
+        Me.MRButton.Enabled = False
+    End Sub
+
+    Private Sub Percent_Click(sender As Object, e As EventArgs) Handles Percent.Click
+        Dim re As Double
+        If Double.TryParse(Me.resultText.Text, re) Then
+            Me.resultText.Text = opResult * (re / 100)
+        End If
+        If reOperator Then
+            Me.inputText.Text = Me.inputText.Text.Substring(0, Me.inputText.Text.LastIndexOf(" "))
+        End If
+        Me.inputText.Text += " " + Me.resultText.Text
+        reOperator = True
+    End Sub
+
+    Private ReadOnly keySequence As Int16() = {0, 5, 10, 20, 1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 16, 17, 18, 19, 21, 22, 23, 24}
+    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+        If Me.Width < 540 Then
+            Me.SplitContainer1.Panel2Collapsed = True
+        Else
+            Me.SplitContainer1.Panel2Collapsed = False
+        End If
+        '小于700像素时转换布局，将运算按钮全部放到另一个TableLayoutPanel
+        If Me.Width < 700 Then
+            If Me.ReSizeTableLayout.Controls.Count <= 0 Then
+                Dim controls = Me.TableLayoutPanel1.Controls
+                For j As Int16 = 0 To 23
+                    Dim con As Control
+                    For i As Int16 = controls.Count - 1 To 0 Step -1
+                        If controls(i).Text = texts(keySequence(j)) Then
+                            con = controls(i)
+                            Exit For
+                        End If
+                    Next
+                    Me.ReSizeTableLayout.Controls.Add(con, j Mod 4, j \ 4)
+                Next
+            End If
+            Me.TableLayoutPanel1.Visible = False
+            Me.Panel2.Controls.Add(Me.ReSizeTableLayout)
+            Me.ReSizeTableLayout.Visible = True
+        Else
+            If Me.TableLayoutPanel1.Controls.Count <= 1 Then
+                Dim controls = Me.ReSizeTableLayout.Controls
+                For j As Int16 = 0 To 24
+                    Dim con As Control
+                    For i As Int16 = controls.Count - 1 To 0 Step -1
+                        If controls(i).Text = texts(j) Then
+                            con = controls(i)
+                            Exit For
+                        End If
+                    Next
+                    If con Is Nothing Then
+                        Dim r As Int16 = 6
+                    End If
+                    If con IsNot Nothing Then
+                        Me.TableLayoutPanel1.Controls.Add(con, j Mod 5, j \ 5)
+                    End If
+                    con = Nothing
+                Next
+            End If
+            Me.TableLayoutPanel1.Visible = True
+            Me.Panel2.Controls.Add(Me.ReSizeTableLayout)
+            Me.ReSizeTableLayout.Visible = False
+        End If
+    End Sub
 End Class

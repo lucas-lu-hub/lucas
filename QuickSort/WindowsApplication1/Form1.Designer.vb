@@ -27,38 +27,45 @@ Partial Class Form1
         Me.SplitContainer3 = New System.Windows.Forms.SplitContainer()
         Me.inputText = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.MSButton = New System.Windows.Forms.Button()
+        Me.MMinus = New System.Windows.Forms.Button()
+        Me.MPlus = New System.Windows.Forms.Button()
+        Me.MRButton = New System.Windows.Forms.Button()
+        Me.MCButton = New System.Windows.Forms.Button()
         Me.resultText = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Button25 = New System.Windows.Forms.Button()
-        Me.Button24 = New System.Windows.Forms.Button()
-        Me.Button23 = New System.Windows.Forms.Button()
-        Me.Button22 = New System.Windows.Forms.Button()
+        Me.Dot = New System.Windows.Forms.Button()
+        Me.Zero = New System.Windows.Forms.Button()
+        Me.Plus_Minus = New System.Windows.Forms.Button()
         Me.Button21 = New System.Windows.Forms.Button()
-        Me.Button20 = New System.Windows.Forms.Button()
-        Me.Button19 = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Plus = New System.Windows.Forms.Button()
+        Me.Three = New System.Windows.Forms.Button()
+        Me.Two = New System.Windows.Forms.Button()
+        Me.One = New System.Windows.Forms.Button()
         Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Minus = New System.Windows.Forms.Button()
+        Me.six = New System.Windows.Forms.Button()
+        Me.five = New System.Windows.Forms.Button()
+        Me.four = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Muti = New System.Windows.Forms.Button()
+        Me.Nine = New System.Windows.Forms.Button()
+        Me.Eight = New System.Windows.Forms.Button()
+        Me.Seven = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Division = New System.Windows.Forms.Button()
+        Me.DeleOne = New System.Windows.Forms.Button()
+        Me.C = New System.Windows.Forms.Button()
+        Me.CE = New System.Windows.Forms.Button()
+        Me.Percent = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.FlowLayoutPanel3 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Button26 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
@@ -81,7 +88,7 @@ Partial Class Form1
         Me.Button42 = New System.Windows.Forms.Button()
         Me.Button43 = New System.Windows.Forms.Button()
         Me.Button45 = New System.Windows.Forms.Button()
-        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.ReSizeTableLayout = New System.Windows.Forms.TableLayoutPanel()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -99,6 +106,7 @@ Partial Class Form1
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -109,7 +117,8 @@ Partial Class Form1
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2
         Me.SplitContainer1.IsSplitterFixed = True
-        Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer1.Location = New System.Drawing.Point(200, 0)
+        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -121,8 +130,8 @@ Partial Class Form1
         '
         Me.SplitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.SplitContainer1.Panel2.Controls.Add(Me.Panel1)
-        Me.SplitContainer1.Size = New System.Drawing.Size(904, 575)
-        Me.SplitContainer1.SplitterDistance = 704
+        Me.SplitContainer1.Size = New System.Drawing.Size(704, 575)
+        Me.SplitContainer1.SplitterDistance = 510
         Me.SplitContainer1.SplitterWidth = 1
         Me.SplitContainer1.TabIndex = 0
         Me.SplitContainer1.TabStop = False
@@ -146,7 +155,7 @@ Partial Class Form1
         '
         Me.SplitContainer2.Panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.SplitContainer2.Panel2.Controls.Add(Me.Panel2)
-        Me.SplitContainer2.Size = New System.Drawing.Size(704, 575)
+        Me.SplitContainer2.Size = New System.Drawing.Size(510, 575)
         Me.SplitContainer2.SplitterDistance = 157
         Me.SplitContainer2.SplitterWidth = 1
         Me.SplitContainer2.TabIndex = 0
@@ -168,8 +177,13 @@ Partial Class Form1
         '
         'SplitContainer3.Panel2
         '
+        Me.SplitContainer3.Panel2.Controls.Add(Me.MSButton)
+        Me.SplitContainer3.Panel2.Controls.Add(Me.MMinus)
+        Me.SplitContainer3.Panel2.Controls.Add(Me.MPlus)
+        Me.SplitContainer3.Panel2.Controls.Add(Me.MRButton)
+        Me.SplitContainer3.Panel2.Controls.Add(Me.MCButton)
         Me.SplitContainer3.Panel2.Controls.Add(Me.resultText)
-        Me.SplitContainer3.Size = New System.Drawing.Size(704, 157)
+        Me.SplitContainer3.Size = New System.Drawing.Size(510, 157)
         Me.SplitContainer3.SplitterDistance = 51
         Me.SplitContainer3.TabIndex = 0
         '
@@ -182,44 +196,105 @@ Partial Class Form1
         Me.inputText.Location = New System.Drawing.Point(0, 36)
         Me.inputText.Name = "inputText"
         Me.inputText.ReadOnly = True
-        Me.inputText.Size = New System.Drawing.Size(704, 15)
+        Me.inputText.Size = New System.Drawing.Size(510, 15)
         Me.inputText.TabIndex = 3
         Me.inputText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(37, 0)
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(99, 25)
+        Me.Label1.Padding = New System.Windows.Forms.Padding(50, 0, 0, 0)
+        Me.Label1.Size = New System.Drawing.Size(149, 25)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Standard"
+        '
+        'MSButton
+        '
+        Me.MSButton.FlatAppearance.BorderSize = 0
+        Me.MSButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MSButton.Location = New System.Drawing.Point(327, 76)
+        Me.MSButton.Name = "MSButton"
+        Me.MSButton.Size = New System.Drawing.Size(75, 23)
+        Me.MSButton.TabIndex = 5
+        Me.MSButton.Text = "MS"
+        Me.MSButton.UseVisualStyleBackColor = True
+        '
+        'MMinus
+        '
+        Me.MMinus.FlatAppearance.BorderSize = 0
+        Me.MMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MMinus.Location = New System.Drawing.Point(246, 76)
+        Me.MMinus.Name = "MMinus"
+        Me.MMinus.Size = New System.Drawing.Size(75, 23)
+        Me.MMinus.TabIndex = 4
+        Me.MMinus.Text = "M-"
+        Me.MMinus.UseVisualStyleBackColor = True
+        '
+        'MPlus
+        '
+        Me.MPlus.FlatAppearance.BorderSize = 0
+        Me.MPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MPlus.Location = New System.Drawing.Point(165, 76)
+        Me.MPlus.Name = "MPlus"
+        Me.MPlus.Size = New System.Drawing.Size(75, 23)
+        Me.MPlus.TabIndex = 3
+        Me.MPlus.Text = "M+"
+        Me.MPlus.UseVisualStyleBackColor = True
+        '
+        'MRButton
+        '
+        Me.MRButton.Enabled = False
+        Me.MRButton.FlatAppearance.BorderSize = 0
+        Me.MRButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MRButton.Location = New System.Drawing.Point(84, 76)
+        Me.MRButton.Name = "MRButton"
+        Me.MRButton.Size = New System.Drawing.Size(75, 23)
+        Me.MRButton.TabIndex = 2
+        Me.MRButton.Text = "MR"
+        Me.MRButton.UseVisualStyleBackColor = True
+        '
+        'MCButton
+        '
+        Me.MCButton.Enabled = False
+        Me.MCButton.FlatAppearance.BorderSize = 0
+        Me.MCButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MCButton.Location = New System.Drawing.Point(3, 76)
+        Me.MCButton.Name = "MCButton"
+        Me.MCButton.Size = New System.Drawing.Size(75, 23)
+        Me.MCButton.TabIndex = 1
+        Me.MCButton.Text = "MC"
+        Me.MCButton.UseVisualStyleBackColor = True
         '
         'resultText
         '
         Me.resultText.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.resultText.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.resultText.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.resultText.Dock = System.Windows.Forms.DockStyle.Top
         Me.resultText.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.resultText.Location = New System.Drawing.Point(0, 0)
         Me.resultText.Margin = New System.Windows.Forms.Padding(0)
         Me.resultText.Multiline = True
         Me.resultText.Name = "resultText"
         Me.resultText.ReadOnly = True
-        Me.resultText.Size = New System.Drawing.Size(704, 102)
+        Me.resultText.Size = New System.Drawing.Size(510, 81)
         Me.resultText.TabIndex = 0
         Me.resultText.Text = "0"
         Me.resultText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.ReSizeTableLayout)
         Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(704, 417)
+        Me.Panel2.Size = New System.Drawing.Size(510, 417)
         Me.Panel2.TabIndex = 0
         '
         'TableLayoutPanel1
@@ -232,30 +307,30 @@ Partial Class Form1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Button25, 4, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button24, 3, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button23, 2, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button22, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.Dot, 3, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.Zero, 2, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.Plus_Minus, 1, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.Button21, 0, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button20, 4, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button19, 3, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button18, 2, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button17, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.Plus, 4, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.Three, 3, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.Two, 2, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.One, 1, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Button16, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button15, 4, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button14, 3, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button13, 2, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button12, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.Minus, 4, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.six, 3, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.five, 2, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.four, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Button11, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button10, 4, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button9, 3, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button8, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button7, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Muti, 4, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Nine, 3, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Eight, 2, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Seven, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Button6, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button5, 4, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button4, 3, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button3, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button2, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Division, 4, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.DeleOne, 3, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.C, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.CE, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Percent, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
@@ -266,53 +341,53 @@ Partial Class Form1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(704, 417)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(510, 417)
         Me.TableLayoutPanel1.TabIndex = 1
         '
         'Button25
         '
         Me.Button25.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button25.Location = New System.Drawing.Point(560, 332)
+        Me.Button25.Location = New System.Drawing.Point(408, 332)
         Me.Button25.Margin = New System.Windows.Forms.Padding(0)
         Me.Button25.Name = "Button25"
-        Me.Button25.Size = New System.Drawing.Size(144, 85)
+        Me.Button25.Size = New System.Drawing.Size(102, 85)
         Me.Button25.TabIndex = 24
         Me.Button25.Text = "Button25"
         Me.Button25.UseVisualStyleBackColor = True
         '
-        'Button24
+        'Dot
         '
-        Me.Button24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button24.Location = New System.Drawing.Point(420, 332)
-        Me.Button24.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(140, 85)
-        Me.Button24.TabIndex = 23
-        Me.Button24.Text = "Button24"
-        Me.Button24.UseVisualStyleBackColor = True
+        Me.Dot.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dot.Location = New System.Drawing.Point(306, 332)
+        Me.Dot.Margin = New System.Windows.Forms.Padding(0)
+        Me.Dot.Name = "Dot"
+        Me.Dot.Size = New System.Drawing.Size(102, 85)
+        Me.Dot.TabIndex = 23
+        Me.Dot.Text = "Button24"
+        Me.Dot.UseVisualStyleBackColor = True
         '
-        'Button23
+        'Zero
         '
-        Me.Button23.BackColor = System.Drawing.SystemColors.Window
-        Me.Button23.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button23.Location = New System.Drawing.Point(280, 332)
-        Me.Button23.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(140, 85)
-        Me.Button23.TabIndex = 22
-        Me.Button23.Text = "0"
-        Me.Button23.UseVisualStyleBackColor = False
+        Me.Zero.BackColor = System.Drawing.SystemColors.Window
+        Me.Zero.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Zero.Location = New System.Drawing.Point(204, 332)
+        Me.Zero.Margin = New System.Windows.Forms.Padding(0)
+        Me.Zero.Name = "Zero"
+        Me.Zero.Size = New System.Drawing.Size(102, 85)
+        Me.Zero.TabIndex = 22
+        Me.Zero.Text = "0"
+        Me.Zero.UseVisualStyleBackColor = False
         '
-        'Button22
+        'Plus_Minus
         '
-        Me.Button22.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button22.Location = New System.Drawing.Point(140, 332)
-        Me.Button22.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(140, 85)
-        Me.Button22.TabIndex = 21
-        Me.Button22.Text = "Button22"
-        Me.Button22.UseVisualStyleBackColor = True
+        Me.Plus_Minus.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Plus_Minus.Location = New System.Drawing.Point(102, 332)
+        Me.Plus_Minus.Margin = New System.Windows.Forms.Padding(0)
+        Me.Plus_Minus.Name = "Plus_Minus"
+        Me.Plus_Minus.Size = New System.Drawing.Size(102, 85)
+        Me.Plus_Minus.TabIndex = 21
+        Me.Plus_Minus.Text = "Button22"
+        Me.Plus_Minus.UseVisualStyleBackColor = True
         '
         'Button21
         '
@@ -320,57 +395,57 @@ Partial Class Form1
         Me.Button21.Location = New System.Drawing.Point(0, 332)
         Me.Button21.Margin = New System.Windows.Forms.Padding(0)
         Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(140, 85)
+        Me.Button21.Size = New System.Drawing.Size(102, 85)
         Me.Button21.TabIndex = 20
         Me.Button21.Text = "Button21"
         Me.Button21.UseVisualStyleBackColor = True
         '
-        'Button20
+        'Plus
         '
-        Me.Button20.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button20.Location = New System.Drawing.Point(560, 249)
-        Me.Button20.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(144, 83)
-        Me.Button20.TabIndex = 19
-        Me.Button20.Text = "Button20"
-        Me.Button20.UseVisualStyleBackColor = True
+        Me.Plus.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Plus.Location = New System.Drawing.Point(408, 249)
+        Me.Plus.Margin = New System.Windows.Forms.Padding(0)
+        Me.Plus.Name = "Plus"
+        Me.Plus.Size = New System.Drawing.Size(102, 83)
+        Me.Plus.TabIndex = 19
+        Me.Plus.Text = "Button20"
+        Me.Plus.UseVisualStyleBackColor = True
         '
-        'Button19
+        'Three
         '
-        Me.Button19.BackColor = System.Drawing.SystemColors.Window
-        Me.Button19.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button19.Location = New System.Drawing.Point(420, 249)
-        Me.Button19.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(140, 83)
-        Me.Button19.TabIndex = 18
-        Me.Button19.Text = "3"
-        Me.Button19.UseVisualStyleBackColor = False
+        Me.Three.BackColor = System.Drawing.SystemColors.Window
+        Me.Three.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Three.Location = New System.Drawing.Point(306, 249)
+        Me.Three.Margin = New System.Windows.Forms.Padding(0)
+        Me.Three.Name = "Three"
+        Me.Three.Size = New System.Drawing.Size(102, 83)
+        Me.Three.TabIndex = 18
+        Me.Three.Text = "3"
+        Me.Three.UseVisualStyleBackColor = False
         '
-        'Button18
+        'Two
         '
-        Me.Button18.BackColor = System.Drawing.SystemColors.Window
-        Me.Button18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button18.Location = New System.Drawing.Point(280, 249)
-        Me.Button18.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(140, 83)
-        Me.Button18.TabIndex = 17
-        Me.Button18.Text = "2"
-        Me.Button18.UseVisualStyleBackColor = False
+        Me.Two.BackColor = System.Drawing.SystemColors.Window
+        Me.Two.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Two.Location = New System.Drawing.Point(204, 249)
+        Me.Two.Margin = New System.Windows.Forms.Padding(0)
+        Me.Two.Name = "Two"
+        Me.Two.Size = New System.Drawing.Size(102, 83)
+        Me.Two.TabIndex = 17
+        Me.Two.Text = "2"
+        Me.Two.UseVisualStyleBackColor = False
         '
-        'Button17
+        'One
         '
-        Me.Button17.BackColor = System.Drawing.SystemColors.Window
-        Me.Button17.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button17.Location = New System.Drawing.Point(140, 249)
-        Me.Button17.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(140, 83)
-        Me.Button17.TabIndex = 16
-        Me.Button17.Text = "1"
-        Me.Button17.UseVisualStyleBackColor = False
+        Me.One.BackColor = System.Drawing.SystemColors.Window
+        Me.One.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.One.Location = New System.Drawing.Point(102, 249)
+        Me.One.Margin = New System.Windows.Forms.Padding(0)
+        Me.One.Name = "One"
+        Me.One.Size = New System.Drawing.Size(102, 83)
+        Me.One.TabIndex = 16
+        Me.One.Text = "1"
+        Me.One.UseVisualStyleBackColor = False
         '
         'Button16
         '
@@ -378,57 +453,57 @@ Partial Class Form1
         Me.Button16.Location = New System.Drawing.Point(0, 249)
         Me.Button16.Margin = New System.Windows.Forms.Padding(0)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(140, 83)
+        Me.Button16.Size = New System.Drawing.Size(102, 83)
         Me.Button16.TabIndex = 15
         Me.Button16.Text = "Button16"
         Me.Button16.UseVisualStyleBackColor = True
         '
-        'Button15
+        'Minus
         '
-        Me.Button15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button15.Location = New System.Drawing.Point(560, 166)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(144, 83)
-        Me.Button15.TabIndex = 14
-        Me.Button15.Text = "Button15"
-        Me.Button15.UseVisualStyleBackColor = True
+        Me.Minus.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Minus.Location = New System.Drawing.Point(408, 166)
+        Me.Minus.Margin = New System.Windows.Forms.Padding(0)
+        Me.Minus.Name = "Minus"
+        Me.Minus.Size = New System.Drawing.Size(102, 83)
+        Me.Minus.TabIndex = 14
+        Me.Minus.Text = "Button15"
+        Me.Minus.UseVisualStyleBackColor = True
         '
-        'Button14
+        'six
         '
-        Me.Button14.BackColor = System.Drawing.SystemColors.Window
-        Me.Button14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button14.Location = New System.Drawing.Point(420, 166)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(140, 83)
-        Me.Button14.TabIndex = 13
-        Me.Button14.Text = "6"
-        Me.Button14.UseVisualStyleBackColor = False
+        Me.six.BackColor = System.Drawing.SystemColors.Window
+        Me.six.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.six.Location = New System.Drawing.Point(306, 166)
+        Me.six.Margin = New System.Windows.Forms.Padding(0)
+        Me.six.Name = "six"
+        Me.six.Size = New System.Drawing.Size(102, 83)
+        Me.six.TabIndex = 13
+        Me.six.Text = "6"
+        Me.six.UseVisualStyleBackColor = False
         '
-        'Button13
+        'five
         '
-        Me.Button13.BackColor = System.Drawing.SystemColors.Window
-        Me.Button13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button13.Location = New System.Drawing.Point(280, 166)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(140, 83)
-        Me.Button13.TabIndex = 12
-        Me.Button13.Text = "5"
-        Me.Button13.UseVisualStyleBackColor = False
+        Me.five.BackColor = System.Drawing.SystemColors.Window
+        Me.five.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.five.Location = New System.Drawing.Point(204, 166)
+        Me.five.Margin = New System.Windows.Forms.Padding(0)
+        Me.five.Name = "five"
+        Me.five.Size = New System.Drawing.Size(102, 83)
+        Me.five.TabIndex = 12
+        Me.five.Text = "5"
+        Me.five.UseVisualStyleBackColor = False
         '
-        'Button12
+        'four
         '
-        Me.Button12.BackColor = System.Drawing.SystemColors.Window
-        Me.Button12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button12.Location = New System.Drawing.Point(140, 166)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(140, 83)
-        Me.Button12.TabIndex = 11
-        Me.Button12.Text = "4"
-        Me.Button12.UseVisualStyleBackColor = False
+        Me.four.BackColor = System.Drawing.SystemColors.Window
+        Me.four.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.four.Location = New System.Drawing.Point(102, 166)
+        Me.four.Margin = New System.Windows.Forms.Padding(0)
+        Me.four.Name = "four"
+        Me.four.Size = New System.Drawing.Size(102, 83)
+        Me.four.TabIndex = 11
+        Me.four.Text = "4"
+        Me.four.UseVisualStyleBackColor = False
         '
         'Button11
         '
@@ -436,57 +511,57 @@ Partial Class Form1
         Me.Button11.Location = New System.Drawing.Point(0, 166)
         Me.Button11.Margin = New System.Windows.Forms.Padding(0)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(140, 83)
+        Me.Button11.Size = New System.Drawing.Size(102, 83)
         Me.Button11.TabIndex = 10
         Me.Button11.Text = "Button11"
         Me.Button11.UseVisualStyleBackColor = True
         '
-        'Button10
+        'Muti
         '
-        Me.Button10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button10.Location = New System.Drawing.Point(560, 83)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(144, 83)
-        Me.Button10.TabIndex = 9
-        Me.Button10.Text = "Button10"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.Muti.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Muti.Location = New System.Drawing.Point(408, 83)
+        Me.Muti.Margin = New System.Windows.Forms.Padding(0)
+        Me.Muti.Name = "Muti"
+        Me.Muti.Size = New System.Drawing.Size(102, 83)
+        Me.Muti.TabIndex = 9
+        Me.Muti.Text = "Button10"
+        Me.Muti.UseVisualStyleBackColor = True
         '
-        'Button9
+        'Nine
         '
-        Me.Button9.BackColor = System.Drawing.SystemColors.Window
-        Me.Button9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button9.Location = New System.Drawing.Point(420, 83)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(140, 83)
-        Me.Button9.TabIndex = 8
-        Me.Button9.Text = "9"
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.Nine.BackColor = System.Drawing.SystemColors.Window
+        Me.Nine.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Nine.Location = New System.Drawing.Point(306, 83)
+        Me.Nine.Margin = New System.Windows.Forms.Padding(0)
+        Me.Nine.Name = "Nine"
+        Me.Nine.Size = New System.Drawing.Size(102, 83)
+        Me.Nine.TabIndex = 8
+        Me.Nine.Text = "9"
+        Me.Nine.UseVisualStyleBackColor = False
         '
-        'Button8
+        'Eight
         '
-        Me.Button8.BackColor = System.Drawing.SystemColors.Window
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button8.Location = New System.Drawing.Point(280, 83)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(140, 83)
-        Me.Button8.TabIndex = 7
-        Me.Button8.Text = "8"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.Eight.BackColor = System.Drawing.SystemColors.Window
+        Me.Eight.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Eight.Location = New System.Drawing.Point(204, 83)
+        Me.Eight.Margin = New System.Windows.Forms.Padding(0)
+        Me.Eight.Name = "Eight"
+        Me.Eight.Size = New System.Drawing.Size(102, 83)
+        Me.Eight.TabIndex = 7
+        Me.Eight.Text = "8"
+        Me.Eight.UseVisualStyleBackColor = False
         '
-        'Button7
+        'Seven
         '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button7.Location = New System.Drawing.Point(140, 83)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(140, 83)
-        Me.Button7.TabIndex = 6
-        Me.Button7.Text = "7"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.Seven.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.Seven.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Seven.Location = New System.Drawing.Point(102, 83)
+        Me.Seven.Margin = New System.Windows.Forms.Padding(0)
+        Me.Seven.Name = "Seven"
+        Me.Seven.Size = New System.Drawing.Size(102, 83)
+        Me.Seven.TabIndex = 6
+        Me.Seven.Text = "7"
+        Me.Seven.UseVisualStyleBackColor = False
         '
         'Button6
         '
@@ -494,75 +569,75 @@ Partial Class Form1
         Me.Button6.Location = New System.Drawing.Point(0, 83)
         Me.Button6.Margin = New System.Windows.Forms.Padding(0)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(140, 83)
+        Me.Button6.Size = New System.Drawing.Size(102, 83)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "Button6"
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'Button5
+        'Division
         '
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button5.Location = New System.Drawing.Point(560, 0)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(144, 83)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Division.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Division.Location = New System.Drawing.Point(408, 0)
+        Me.Division.Margin = New System.Windows.Forms.Padding(0)
+        Me.Division.Name = "Division"
+        Me.Division.Size = New System.Drawing.Size(102, 83)
+        Me.Division.TabIndex = 4
+        Me.Division.Text = "Button5"
+        Me.Division.UseVisualStyleBackColor = True
         '
-        'Button4
+        'DeleOne
         '
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button4.Location = New System.Drawing.Point(420, 0)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(140, 83)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.DeleOne.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DeleOne.Location = New System.Drawing.Point(306, 0)
+        Me.DeleOne.Margin = New System.Windows.Forms.Padding(0)
+        Me.DeleOne.Name = "DeleOne"
+        Me.DeleOne.Size = New System.Drawing.Size(102, 83)
+        Me.DeleOne.TabIndex = 3
+        Me.DeleOne.Text = "Button4"
+        Me.DeleOne.UseVisualStyleBackColor = True
         '
-        'Button3
+        'C
         '
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(280, 0)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(140, 83)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "C"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.C.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.C.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.C.Location = New System.Drawing.Point(204, 0)
+        Me.C.Margin = New System.Windows.Forms.Padding(0)
+        Me.C.Name = "C"
+        Me.C.Size = New System.Drawing.Size(102, 83)
+        Me.C.TabIndex = 2
+        Me.C.Text = "C"
+        Me.C.UseVisualStyleBackColor = True
         '
-        'Button2
+        'CE
         '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button2.Location = New System.Drawing.Point(141, 1)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(1, 1, 0, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(139, 82)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "CE"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.CE.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CE.FlatAppearance.BorderSize = 0
+        Me.CE.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CE.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CE.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.CE.Location = New System.Drawing.Point(103, 1)
+        Me.CE.Margin = New System.Windows.Forms.Padding(1, 1, 0, 0)
+        Me.CE.Name = "CE"
+        Me.CE.Size = New System.Drawing.Size(101, 82)
+        Me.CE.TabIndex = 1
+        Me.CE.Text = "CE"
+        Me.CE.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Percent
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button1.Location = New System.Drawing.Point(1, 1)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(1, 1, 0, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(139, 82)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "%"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Percent.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.Percent.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Percent.FlatAppearance.BorderSize = 0
+        Me.Percent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Percent.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Percent.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Percent.Location = New System.Drawing.Point(1, 1)
+        Me.Percent.Margin = New System.Windows.Forms.Padding(1, 1, 0, 0)
+        Me.Percent.Name = "Percent"
+        Me.Percent.Size = New System.Drawing.Size(101, 82)
+        Me.Percent.TabIndex = 0
+        Me.Percent.Text = "%"
+        Me.Percent.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -571,7 +646,7 @@ Partial Class Form1
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(199, 575)
+        Me.Panel1.Size = New System.Drawing.Size(193, 575)
         Me.Panel1.TabIndex = 0
         '
         'TabControl1
@@ -585,7 +660,7 @@ Partial Class Form1
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.Padding = New System.Drawing.Point(0, 0)
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(199, 575)
+        Me.TabControl1.Size = New System.Drawing.Size(193, 575)
         Me.TabControl1.TabIndex = 0
         Me.TabControl1.TabStop = False
         '
@@ -596,19 +671,38 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(0)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(191, 549)
+        Me.TabPage1.Size = New System.Drawing.Size(185, 549)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "History"
+        '
+        'FlowLayoutPanel2
+        '
+        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
+        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(185, 549)
+        Me.FlowLayoutPanel2.TabIndex = 1
         '
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.FlowLayoutPanel3)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(0)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(191, 549)
+        Me.TabPage2.Size = New System.Drawing.Size(185, 549)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Memory"
+        '
+        'FlowLayoutPanel3
+        '
+        Me.FlowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel3.Margin = New System.Windows.Forms.Padding(0)
+        Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
+        Me.FlowLayoutPanel3.Size = New System.Drawing.Size(185, 549)
+        Me.FlowLayoutPanel3.TabIndex = 0
         '
         'Button26
         '
@@ -883,14 +977,28 @@ Partial Class Form1
         Me.Button45.Text = "About"
         Me.Button45.UseVisualStyleBackColor = True
         '
-        'FlowLayoutPanel2
+        'ReSizeTableLayout
         '
-        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
-        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(191, 549)
-        Me.FlowLayoutPanel2.TabIndex = 1
+        Me.ReSizeTableLayout.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.ReSizeTableLayout.ColumnCount = 4
+        Me.ReSizeTableLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.ReSizeTableLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.ReSizeTableLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.ReSizeTableLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.ReSizeTableLayout.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ReSizeTableLayout.Location = New System.Drawing.Point(0, 0)
+        Me.ReSizeTableLayout.Margin = New System.Windows.Forms.Padding(0)
+        Me.ReSizeTableLayout.Name = "ReSizeTableLayout"
+        Me.ReSizeTableLayout.RowCount = 6
+        Me.ReSizeTableLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.ReSizeTableLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.ReSizeTableLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.ReSizeTableLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.ReSizeTableLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.ReSizeTableLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.ReSizeTableLayout.Size = New System.Drawing.Size(510, 417)
+        Me.ReSizeTableLayout.TabIndex = 4
+        Me.ReSizeTableLayout.Visible = False
         '
         'Form1
         '
@@ -899,8 +1007,9 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(904, 575)
         Me.Controls.Add(Me.Button26)
-        Me.Controls.Add(Me.TableLayoutPanel2)
         Me.Controls.Add(Me.SplitContainer1)
+        Me.Controls.Add(Me.TableLayoutPanel2)
+        Me.MinimumSize = New System.Drawing.Size(400, 550)
         Me.Name = "Form1"
         Me.Text = "Calculator"
         Me.SplitContainer1.Panel1.ResumeLayout(False)
@@ -922,6 +1031,7 @@ Partial Class Form1
         Me.Panel1.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.FlowLayoutPanel1.PerformLayout()
@@ -943,30 +1053,30 @@ Partial Class Form1
     Friend WithEvents Panel2 As Panel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Button25 As Button
-    Friend WithEvents Button24 As Button
-    Friend WithEvents Button23 As Button
-    Friend WithEvents Button22 As Button
+    Friend WithEvents Dot As Button
+    Friend WithEvents Zero As Button
+    Friend WithEvents Plus_Minus As Button
     Friend WithEvents Button21 As Button
-    Friend WithEvents Button20 As Button
-    Friend WithEvents Button19 As Button
-    Friend WithEvents Button18 As Button
-    Friend WithEvents Button17 As Button
+    Friend WithEvents Plus As Button
+    Friend WithEvents Three As Button
+    Friend WithEvents Two As Button
+    Friend WithEvents One As Button
     Friend WithEvents Button16 As Button
-    Friend WithEvents Button15 As Button
-    Friend WithEvents Button14 As Button
-    Friend WithEvents Button13 As Button
-    Friend WithEvents Button12 As Button
+    Friend WithEvents Minus As Button
+    Friend WithEvents six As Button
+    Friend WithEvents five As Button
+    Friend WithEvents four As Button
     Friend WithEvents Button11 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents Muti As Button
+    Friend WithEvents Nine As Button
+    Friend WithEvents Eight As Button
+    Friend WithEvents Seven As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Division As Button
+    Friend WithEvents DeleOne As Button
+    Friend WithEvents C As Button
+    Friend WithEvents CE As Button
+    Friend WithEvents Percent As Button
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents Button27 As Button
@@ -989,4 +1099,11 @@ Partial Class Form1
     Friend WithEvents Button44 As Button
     Friend WithEvents Button45 As Button
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
+    Friend WithEvents MSButton As Button
+    Friend WithEvents MMinus As Button
+    Friend WithEvents MPlus As Button
+    Friend WithEvents MRButton As Button
+    Friend WithEvents MCButton As Button
+    Friend WithEvents FlowLayoutPanel3 As FlowLayoutPanel
+    Friend WithEvents ReSizeTableLayout As TableLayoutPanel
 End Class
