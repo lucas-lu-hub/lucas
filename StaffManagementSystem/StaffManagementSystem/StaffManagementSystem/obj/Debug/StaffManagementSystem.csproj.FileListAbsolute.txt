@@ -1,0 +1,15 @@
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\bin\Debug\StaffManagementSystem.exe.config
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\bin\Debug\StaffManagementSystem.exe
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\bin\Debug\StaffManagementSystem.pdb
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\bin\Debug\C1.Win.C1FlexGrid.4.dll
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\obj\Debug\StaffManagementSystem.Properties.Resources.resources
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\obj\Debug\StaffManagementSystem.csproj.GenerateResource.Cache
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\obj\Debug\StaffManagementSystem.exe
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\obj\Debug\StaffManagementSystem.pdb
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\bin\Debug\C1.Win.C1FlexGrid.4.xml
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\obj\Debug\StaffManagementSystem.csprojResolveAssemblyReference.cache
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\obj\Debug\StaffManagementSystem.exe.licenses
+D:\code\C# Pratice project\StaffManagementSystem\StaffManagementSystem\obj\Debug\StaffManagementSystem.StaffView.resources
+C:\Users\LucasLu\Desktop\StaffManagementSystem\StaffManagementSystem\StaffManagementSystem\bin\Debug\StaffManagementSystem.exe.config
+C:\Users\LucasLu\Desktop\StaffManagementSystem\StaffManagementSystem\StaffManagementSystem\obj\Debug\StaffManagementSystem.exe
+C:\Users\LucasLu\Desktop\StaffManagementSystem\StaffManagementSystem\StaffManagementSystem\obj\Debug\StaffManagementSystem.pdb
