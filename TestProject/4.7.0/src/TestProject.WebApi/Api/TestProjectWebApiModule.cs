@@ -7,6 +7,7 @@ using Abp.WebApi;
 
 namespace TestProject.Api
 {
+    [Dependson(typeof())]
     [DependsOn(typeof(AbpWebApiModule), typeof(TestProjectApplicationModule))]
     public class TestProjectWebApiModule : AbpModule
     {
