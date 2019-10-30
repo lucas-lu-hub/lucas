@@ -35,5 +35,9 @@ namespace TestProject.Authorization
                   roleManager)
         {
         }
+        public AbpLoginResultType LoginAsync(string userName, string password)
+        {
+            return AbpLoginResultType.InvalidPassword;
+        }
     }
 }

@@ -199,6 +199,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authorization\Repository\IUserRepository.cs" />
     <Compile Include="TestProjectConsts.cs" />
     <Compile Include="TestProjectCoreModule.cs" />
     <Compile Include="AppVersionHelper.cs" />
