@@ -3,3 +3,6 @@ C:\Users\LucasLu\Documents\Visual Studio 2015\Projects\ConsoleApplication5\Custo
 C:\Users\LucasLu\Documents\Visual Studio 2015\Projects\ConsoleApplication5\CustomAttribute\bin\Debug\CustomAttribute.pdb
 C:\Users\LucasLu\Documents\Visual Studio 2015\Projects\ConsoleApplication5\CustomAttribute\obj\Debug\CustomAttribute.exe
 C:\Users\LucasLu\Documents\Visual Studio 2015\Projects\ConsoleApplication5\CustomAttribute\obj\Debug\CustomAttribute.pdb
+F:\gitResponsitory\ConsoleApplication5\CustomAttribute\bin\Debug\CustomAttribute.exe.config
+F:\gitResponsitory\ConsoleApplication5\CustomAttribute\obj\Debug\CustomAttribute.exe
+F:\gitResponsitory\ConsoleApplication5\CustomAttribute\obj\Debug\CustomAttribute.pdb
