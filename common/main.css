@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #eee;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+
+
+a {
+  color: hsl(200, 50%, 50%);
+  text-decoration: none;
+}
+
+.rootContainer {
+  width: 100%;
+  height: 100%;
+}
+/*一级容器 */
+.headerStyle {
+    position: fixed;
+    background-color: RED;
+    height: 50px;
+    width: 100%;
+    z-index: 100;
+}
+.bodyStyle {
+  position: fixed;
+  padding-top: 50px;
+  height: 100%;
+  width: 100%;
+}
+/*二级容器 */
+.menusStyle {
+  float: left;
+    background-color: blue;
+    width: 250px;
+    height: 100%;
+    z-index: 50;
+}
+.contentsContainer {
+    padding-left: 250px;
+    height: 100%;
+}
+.hideMenus {
+  width: 50px;
+}
+.hiderButton{
+  background-color: teal;
+  float: right;
+  width: 30px;
+  height: 15px;
+}
+.extensionContent {
+  padding-left: 50px;
+}
+/*三级容器 */
+.ProductsStyle {
+  background-color: yellow;
+  width: 100%;
+  height: 50px;
+}
+.contents {
+  background-color: brown;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+}
