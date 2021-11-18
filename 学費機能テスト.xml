@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TestSuite>
+<TestSuite Name="学費機能テスト" DataType="TestSuite" Description="TestSuite">
+  <ItemGroup>
+    <Item ItemType="Group" Name="生徒情報">
+      <Item ItemType="Folder" FolderPath="生徒情報">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="新規-基本情報 " DocType="TestCase" FilePath="新規-基本情報 .xml">
+          <TestCase>学籍番号check</TestCase>
+          <TestCase>学籍番号check2</TestCase>
+          <TestCase>无权限所属check</TestCase>
+          <TestCase>停用所属check</TestCase>
+          <TestCase>保存check</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="详细" DocType="TestCase" FilePath="详细.xml">
+          <TestCase>详细画面</TestCase>
+          <TestCase>前へ次へ</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="削除" DocType="TestCase" FilePath="削除.xml">
+          <TestCase>详细から</TestCase>
+          <TestCase>一览から</TestCase>
+          <TestCase>削除不可</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="生徒情報エクスポート">
+      <Item ItemType="Folder" FolderPath="生徒情報エクスポート">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="生徒情報エクスポート" DocType="TestCase" FilePath="生徒情報エクスポート.xml">
+          <TestCase>学籍番号順</TestCase>
+          <TestCase>管理番号順</TestCase>
+          <TestCase>50音順</TestCase>
+          <TestCase>出席番号順</TestCase>
+          <TestCase>男女別50音順</TestCase>
+          <TestCase>男女別出席番号順</TestCase>
+          <TestCase>パターン</TestCase>
+          <TestCase>年度指定</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="エクスポートキャンセル" DocType="TestCase" FilePath="エクスポートキャンセル.xml">
+          <TestCase>エクスポートキャンセル</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="学生情報管理_生徒基本台帳">
+      <Item ItemType="Folder" FolderPath="学生情報管理_生徒基本台帳">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="preview" DocType="TestCase" FilePath="preview.xml">
+          <TestCase>学籍番号順</TestCase>
+          <TestCase>50音顺</TestCase>
+          <TestCase>出席番号顺</TestCase>
+          <TestCase>管理番号顺</TestCase>
+          <TestCase>男女50音顺</TestCase>
+          <TestCase>男女出席番号顺</TestCase>
+          <TestCase>集计所属</TestCase>
+          <TestCase>使用停止所属</TestCase>
+          <TestCase>无权限所属</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="学生情報管理_学籍番号付番">
+      <Item ItemType="Folder" FolderPath="学生情報管理_学籍番号付番">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="学籍番号" DocType="TestCase" FilePath="学籍番号.xml">
+          <TestCase>学籍番号1_設定_付番</TestCase>
+          <TestCase>学籍番号2_設定_付番</TestCase>
+          <TestCase>学籍番号3_設定_付番</TestCase>
+          <TestCase>学籍番号4_設定_付番</TestCase>
+          <TestCase>学籍番号5_設定_付番</TestCase>
+          <TestCase>学籍番号_2020年_設定_付番_設定处理年度为2021</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="学生情報管理_管理番号付番">
+      <Item ItemType="Folder" FolderPath="学生情報管理_管理番号付番">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="管理番号" DocType="TestCase" FilePath="管理番号.xml">
+          <TestCase>管理番号1_設定_付番</TestCase>
+          <TestCase>管理番号2_設定_付番</TestCase>
+          <TestCase>管理番号3_設定_付番</TestCase>
+          <TestCase>管理番号4_設定_付番</TestCase>
+          <TestCase>管理番号_2020年_設定_付番_設定处理年度为2021</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="生徒情報管理＿テキストファイル出力">
+      <Item ItemType="Folder" FolderPath="生徒情報管理＿テキストファイル出力">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="生徒情報エクスポート" DocType="TestCase" FilePath="生徒情報エクスポート.xml">
+          <TestCase>生徒情報エクスポート＿学籍番号順</TestCase>
+          <TestCase>生徒情報エクスポート＿管理番号順</TestCase>
+          <TestCase>生徒情報エクスポート＿出席番号順</TestCase>
+          <TestCase>生徒情報エクスポート＿50音順</TestCase>
+          <TestCase>生徒情報エクスポート＿男女別50音順</TestCase>
+          <TestCase>生徒情報エクスポート＿男女別出席番号順</TestCase>
+          <TestCase>生徒情報エクスポート＿パターン</TestCase>
+          <TestCase>生徒情報エクスポート＿年度指定</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="入金情報エクスポート" DocType="TestCase" FilePath="入金情報エクスポート.xml">
+          <TestCase>入金情報エクスポート＿完納</TestCase>
+          <TestCase>入金情報エクスポート＿過納</TestCase>
+          <TestCase>入金情報エクスポート＿誤納</TestCase>
+          <TestCase>入金情報エクスポート＿未確認</TestCase>
+          <TestCase>入金情報エクスポート＿出力対象を選択しない</TestCase>
+          <TestCase>入金情報エクスポート＿パタン</TestCase>
+          <TestCase>入金情報エクスポート＿年度指定</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="学費情報エクスポート" DocType="TestCase" FilePath="学費情報エクスポート.xml">
+          <TestCase>学費情報エクスポート＿納付単位</TestCase>
+          <TestCase>学費情報エクスポート＿费目</TestCase>
+          <TestCase>学費情報エクスポート＿科目</TestCase>
+          <TestCase>学費情報エクスポート＿集計費目のみ</TestCase>
+          <TestCase>学費情報エクスポート＿集計費目その他</TestCase>
+          <TestCase>学費情報エクスポート＿パタン</TestCase>
+          <TestCase>学費情報エクスポート＿年度指定</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="支給情報エクスポート" DocType="TestCase" FilePath="支給情報エクスポート.xml">
+          <TestCase>支給情報エクスポート＿支給単位</TestCase>
+          <TestCase>支給情報エクスポート＿费目</TestCase>
+          <TestCase>支給情報エクスポート＿科目</TestCase>
+          <TestCase>支給情報エクスポート＿集計費目のみ</TestCase>
+          <TestCase>支給情報エクスポート＿集計費目その他</TestCase>
+          <TestCase>支給情報エクスポート＿パタン</TestCase>
+          <TestCase>支給情報エクスポート＿年度指定</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="エクスポートキャンセル" DocType="TestCase" FilePath="エクスポートキャンセル.xml">
+          <TestCase>エクスポートキャンセル</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="生徒情報インポート">
+      <Item ItemType="Folder" FolderPath="生徒情報インポート">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="新規追加" DocType="TestCase" FilePath="新規追加.xml">
+          <TestCase>標準所属コード_基本情报</TestCase>
+          <TestCase>標準所属コード_属性rank</TestCase>
+          <TestCase>標準所属コード_口座情報</TestCase>
+          <TestCase>標準所属コード_予備情報 </TestCase>
+          <TestCase>氏名生年月日_基本情报</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="編集情報" DocType="TestCase" FilePath="編集情報.xml">
+          <TestCase>標準所属コード_基本情报</TestCase>
+          <TestCase>氏名生年月日_属性rank</TestCase>
+          <TestCase>氏名生年月管理番号_口座</TestCase>
+          <TestCase>氏名生年月管理番号_基本情报</TestCase>
+          <TestCase>管理番号pattern</TestCase>
+          <TestCase>学校コード(2桁)学籍番号_予備情報 </TestCase>
+        </Item>
+        <Item ItemType="File" DocName="新規追加と編集情報" DocType="TestCase" FilePath="新規追加と編集情報.xml">
+          <TestCase>標準所属コード_基本情报</TestCase>
+          <TestCase> 氏名生年月_口座情報</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="学生情報管理_異動者一覧表">
+      <Item ItemType="Folder" FolderPath="異動者一覧表">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="ﾌﾟﾚﾋﾞｭｰ" DocType="TestCase" FilePath="ﾌﾟﾚﾋﾞｭｰ.xml">
+          <TestCase>ClearfrmStudentChangeList</TestCase>
+          <TestCase>異動区分不填</TestCase>
+          <TestCase>NewTestCase</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="学生情報管理_住所ラベル">
+      <Item ItemType="Folder" FolderPath="学生情報管理_住所ラベル">
+        <Item ItemType="File" DocName="Resotre" DocType="TestCase" FilePath="Resotre.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="preview" DocType="TestCase" FilePath="preview.xml">
+          <TestCase>有权限的</TestCase>
+          <TestCase>所属view</TestCase>
+          <TestCase>所属</TestCase>
+          <TestCase>学籍番号</TestCase>
+          <TestCase>卒退</TestCase>
+          <TestCase>异动区分</TestCase>
+          <TestCase>group</TestCase>
+          <TestCase>属性</TestCase>
+          <TestCase>予备区分</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="学生情報管理_学費ＩＤ登録">
+      <Item ItemType="Folder" FolderPath="学生情報管理_学費ＩＤ登録">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="学費ＩＤ登録" DocType="TestCase" FilePath="学費ＩＤ登録.xml">
+          <TestCase>学費ＩＤ登録1_設定_付番</TestCase>
+          <TestCase>学費ＩＤ登録2_設定_付番</TestCase>
+          <TestCase>学費ＩＤ登録3_設定_付番</TestCase>
+          <TestCase>学費ＩＤ登録4_設定_付番</TestCase>
+          <TestCase>学費ＩＤ登録5_設定_付番</TestCase>
+          <TestCase>学費ＩＤ登録6_設定_付番</TestCase>
+          <TestCase>学費ＩＤ登録_2020年_設定_付番_設定处理年度为2021</TestCase>
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemType="Group" Name="学生情報管理_出席番号付番">
+      <Item ItemType="Folder" FolderPath="学生情報管理_出席番号付番">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="出席番号" DocType="TestCase" FilePath="出席番号.xml">
+          <TestCase>出席番号1_設定_付番_昇順</TestCase>
+          <TestCase>出席番号2_設定_付番_降順</TestCase>
+        </Item>
+      </Item>
+    </Item>
+  </ItemGroup>
+</TestSuite>
