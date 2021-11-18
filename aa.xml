@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TestSuite>
+<TestSuite Name="学費機能テスト" DataType="TestSuite" Description="TestSuite">
+  <ItemGroup>
+  </ItemGroup>
+</TestSuite>
+  
