@@ -18,6 +18,7 @@
         End If
 
         ' 印刷様式
+；水电费拉卡拉开始
 
         ConditionPrintUtility.AppendString(Builder, indentLevel2, "◆帳票種類", Nothing)
         ConditionPrintUtility.AppendString(Builder, indentLevel3, If(Me.ReportCategoryControl1.IsDetail, "明細表", "集計表"), Nothing)
