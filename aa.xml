@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TestSuite>
 <TestSuite Name="学費機能テスト" DataType="TestSuite" Description="TestSuite">
+    <Item ItemType="Group" Name="生徒情報エクスポート">
+      <Item ItemType="Folder" FolderPath="生徒情報エクスポート">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="生徒情報エクスポート" DocType="TestCase" FilePath="生徒情報エクスポート.xml">
+          <TestCase>学籍番号順</TestCase>
+          <TestCase>管理番号順</TestCase>
+          <TestCase>50音順</TestCase>
+          <TestCase>出席番号順</TestCase>
+          <TestCase>男女別50音順</TestCase>
+          <TestCase>男女別出席番号順</TestCase>
+          <TestCase>パターン</TestCase>
+          <TestCase>年度指定</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="エクスポートキャンセル" DocType="TestCase" FilePath="エクスポートキャンセル.xml">
+          <TestCase>エクスポートキャンセル</TestCase>
+        </Item>
+      </Item>
+    </Item>
 </TestSuite>
