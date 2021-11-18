@@ -229,7 +229,7 @@
         </Item>
         <Item ItemType="File" DocName="出席番号" DocType="TestCase" FilePath="出席番号.xml">
           <TestCase>出席番号1_設定_付番_昇順</TestCase>
-          <TestCase>出席番luca</TestCase>
+          <TestCase>出席hello world</TestCase>
         </Item>
       </Item>
     </Item>
