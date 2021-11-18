@@ -25,6 +25,21 @@
         </Item>
       </Item>
     </Item>
+    <Item ItemType="Group" Name="学生情報管asdf号付番">
+      <Item ItemType="Folder" FolderPath="学生情報管理asdfas_学籍番号付番">
+        <Item ItemType="Fiasdfle" DocName="Restasdfore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="学籍番号" DocType="TestCase" FilePath="学籍番号.xml">
+          <TestCase>学籍番号asdf1_設定_付番</TestCase>
+          <TestCase>学籍番asdf号2_設定_付番</TestCase>
+          <TestCase>学籍番号3_設定_付番</TestCase>
+          <TestCase>学籍番asdf号4_設定_付番</TestCase>
+          <TestCase>学籍番asdf号5_設定_付番</TestCase>
+          <TestCase>学籍番号_2020年_設定_付番_設定处理年度为2021</TestCase>
+        </Item>
+      </Item>
+    </Item>
 	    <Item ItemType="Group" Name="生徒情報hellpasdf">
       <Item ItemType="Folder" FolderPath="生徒情報asdf">
         <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
