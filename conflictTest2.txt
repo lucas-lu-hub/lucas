@@ -22,6 +22,8 @@
 22222222222222222222222222222222222222222222222
 1111111111111111111111111111111111111111111111111111111111111111111111
 
+3333333333333333333333333333333333333333333備区分項
+
 
         ConditionPrintUtility.AppendString(Builder, indentLevel2, "◆帳票種類", Nothing)
         ConditionPrintUtility.AppendString(Builder, indentLevel3, If(Me.ReportCategoryControl1.IsDetail, "明細表", "集計表"), Nothing)
