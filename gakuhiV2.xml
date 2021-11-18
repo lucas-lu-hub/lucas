@@ -314,5 +314,27 @@
         </Item>
       </Item>
     </Item>
+	  <Item ItemType="Group" Name="学生情報管理_出席番号付番1">
+      <Item ItemType="Folder" FolderPath="学生情報管理_出席番号付番">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="出席番号" DocType="TestCase" FilePath="出席番号.xml">
+          <TestCase>出席番号1_設定_付番_昇順</TestCase>
+          <TestCase>出席番号2_設定_付番_降順</TestCase>
+        </Item>
+      </Item>
+    </Item>
+	    <Item ItemType="Group" Name="学生情報管理_lucas">
+      <Item ItemType="Folder" FolderPath="学生情報管理_出席番号付番">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="出席番号" DocType="TestCase" FilePath="出席番号.xml">
+          <TestCase>出席番号1_設定_付番_昇順</TestCase>
+          <TestCase>出席hello world</TestCase>
+        </Item>
+      </Item>
+    </Item>
   </ItemGroup>
 </TestSuite>
