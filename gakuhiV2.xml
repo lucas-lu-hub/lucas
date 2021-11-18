@@ -63,6 +63,26 @@
         </Item>
       </Item>
     </Item>
+	    <Item ItemType="Group" Name="生徒情報エasdfasト">
+      <Item ItemType="Folder" FolderPath="生徒sadf情報エクスポート">
+        <Item ItemType="File" DocName="Ressdftore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="生徒情報エクスポート" DocType="TestCase" FilePath="生徒情報エクスポート.xml">
+          <TestCase>学籍番sdf号順</TestCase>
+          <TestCase>管理番号順</TestCase>
+          <TestCase>50音順</TestCase>
+          <TestCase>出席sd番号順</TestCase>
+          <TestCase>男女別50音順</TestCase>
+          <TestCase>男女sdf別出席番号順</TestCase>
+          <TestCase>パターン</TestCase>
+          <TestCase>年度指定</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="エクスポートキャンセル" DocType="TestCase" FilePath="エクスポートキャンセル.xml">
+          <TestCase>エクスポートキャンセル</TestCase>
+        </Item>
+      </Item>
+    </Item>
     <Item ItemType="Group" Name="学生情報管理_学籍番号付番">
       <Item ItemType="Folder" FolderPath="学生情報管理_学籍番号付番">
         <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
