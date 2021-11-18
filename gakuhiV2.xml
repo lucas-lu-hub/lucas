@@ -12,7 +12,7 @@
           <TestCase>学籍番号check2</TestCase>
           <TestCase>无权限所属check</TestCase>
           <TestCase>停用所属check</TestCase>
-          <TestCase>保存check</TestCase>
+          <TestCase>保存checkasdfasdfasdf</TestCase>
         </Item>
         <Item ItemType="File" DocName="详细" DocType="TestCase" FilePath="详细.xml">
           <TestCase>详细画面</TestCase>
