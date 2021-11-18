@@ -1,0 +1,42 @@
+可见界面一共分为3栏，左边一栏为你本地当前文件内容，右面一栏为远端服务器上当前文件内容。 中一栏为本地当前文件原始内容。可见中间一栏meld已经帮你自动合并了，检查无误就可以直接保存 退出了。然后meld帮你自动保存了一份git原始冲突文件xxx.orig，检查无误可以删除此文件。
+
+注：当不同行冲突时，meld会帮你自动合并，当同一行冲突时，meld会以git 冲突文件的格式显示在 中间栏，此时你比较判断<<<<<<< HEAD/=========/>>>>>>>>3行直接的差异手动合并即可。
+
+        If Me.StudentLimitControl1.rdoFilter.Checked Then
+            With Me.StudentLimitControl1
+                ConditionPrintUtility.AppendCboCondition(Builder, indentLevel3, .ReportDivisionViewControl1.DivisionViewLabelText, .ReportDivisionViewControl1.cboDivView)
+                ConditionPrintUtility.AppendMasterEdit(Builder, indentLevel3, .ReportDivisionViewControl1.DivisionLabelText, .ReportDivisionViewControl1.btnDivision)
+                ConditionPrintUtility.AppendMasterEdit(Builder, indentLevel3, "卒退区分：", .btnGraduationDiff)
+                ConditionPrintUtility.AppendMasterEdit(Builder, indentLevel3, "異動区分：", .btnChangeDiff)
+                ConditionPrintUtility.AppendCboCondition(Builder, indentLevel3, "入金方法：", .cboReceivingWay)
+                ConditionPrintUtility.AppendMasterEdit(Builder, indentLevel3, "学園口座：", .btnChangeSchoolAccount)
+                ConditionPrintUtility.AppendMasterEdit(Builder, indentLevel3, "グループ：", .btnGroup)
+                ConditionPrintUtility.AppendMasterEdit(Builder, indentLevel3, "予備区分：", .btnYobi)
+                ConditionPrintUtility.AppendMasterEdit(Builder, indentLevel3, "予備区分項目：", .btnYobiItem)
+                ConditionPrintUtility.AppendMasterEdit(Builder, indentLevel3, "属    性：", .btnAttribute)
+            End With
+        End If
+
+        ' 印刷様式
+        ConditionPrintUtility.AppendString(Builder, indentLevel1, "【印刷様式】", Nothing)
+
+        ConditionPrintUtility.AppendString(Builder, indentLevel2, "◆帳票種類", Nothing)
+        ConditionPrintUtility.AppendString(Builder, indentLevel3, If(Me.ReportCategoryControl1.IsDetail, "明細表", "集計表"), Nothing)
+        ConditionPrintUtility.AppendString(Builder, indentLevel3, GetReportItemType(), Nothing)
+
+        Builder.AppendLine(Me.PrintTabPrintOrder1.GetConditionString())
+        Builder.AppendLine(Me.PrintTabPrintNo1.GetConditionString())
+
+        Dim printOption As System.Text.StringBuilder = New System.Text.StringBuilder
+        If Me.GroupByFeeControl1.LevelControl1.chkDivision.Checked Then
+            ConditionPrintUtility.AppendString(printOption, indentLevel2, "所属単位集計の印刷  集計レベル：" & Me.GroupByFeeControl1.LevelControl1.Level, Nothing)
+        End If
+        ConditionPrintUtility.AppendCheckBox(printOption, indentLevel2, Me.GroupByFeeControl1.chkUnit, True)
+        ConditionPrintUtility.AppendCheckBox(printOption, indentLevel2, Me.GroupByFeeControl1.chkContent, True)
+        If Me.GroupByFeeControl1.chkOtherGroup.Enabled AndAlso Me.GroupByFeeControl1.chkOtherGroup.Checked Then
+            ConditionPrintUtility.AppendString(printOption, indentLevel2, Me.GroupByFeeControl1.chkOtherGroup.Text & GetOtherGroupType(), Nothing)
+        End If
+        ConditionPrintUtility.AppendCheckBox(printOption, indentLevel2, Me.GroupByFeeControl1.chkUnpaidExport, True)
+        If Not String.IsNullOrEmpty(printOption.ToString) Then
+            ConditionPrintUtility.AppendString(Builder, indentLevel2, "印刷オプション：", Nothing)
+            Buil
