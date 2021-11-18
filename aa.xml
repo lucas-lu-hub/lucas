@@ -2,6 +2,29 @@
 <!DOCTYPE TestSuite>
 <TestSuite Name="学費機能テスト" DataType="TestSuite" Description="TestSuite">
   <ItemGroup>
+      <Item ItemType="Group" Name="生徒情報">
+      <Item ItemType="Folder" FolderPath="生徒情報">
+        <Item ItemType="File" DocName="Restore" DocType="TestCase" FilePath="Restore.xml">
+          <TestCase>Restore</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="新規-基本情報 " DocType="TestCase" FilePath="新規-基本情報 .xml">
+          <TestCase>学籍番号check</TestCase>
+          <TestCase>学籍番号check2</TestCase>
+          <TestCase>无权限所属check</TestCase>
+          <TestCase>停用所属check</TestCase>
+          <TestCase>保存check</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="详细" DocType="TestCase" FilePath="详细.xml">
+          <TestCase>详细画面</TestCase>
+          <TestCase>前へ次へ</TestCase>
+        </Item>
+        <Item ItemType="File" DocName="削除" DocType="TestCase" FilePath="削除.xml">
+          <TestCase>详细から</TestCase>
+          <TestCase>一览から</TestCase>
+          <TestCase>削除不可</TestCase>
+        </Item>
+      </Item>
+    </Item>
   </ItemGroup>
 </TestSuite>
   
