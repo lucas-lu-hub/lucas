@@ -1,0 +1,14 @@
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\MyWebApi.Manager.csproj.AssemblyReference.cache
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\MyWebApi.Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\MyWebApi.Manager.AssemblyInfoInputs.cache
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\MyWebApi.Manager.AssemblyInfo.cs
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\MyWebApi.Manager.csproj.CoreCompileInputs.cache
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\bin\Debug\net6.0\MyWebApi.Manager.deps.json
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\bin\Debug\net6.0\MyWebApi.Manager.runtimeconfig.json
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\bin\Debug\net6.0\MyWebApi.Manager.dll
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\bin\Debug\net6.0\MyWebApi.Manager.pdb
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\MyWebApi.Manager.dll
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\refint\MyWebApi.Manager.dll
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\MyWebApi.Manager.pdb
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\MyWebApi.Manager.genruntimeconfig.cache
+C:\Users\lucaslu\source\repos\MyWebAPI\MyWebApi.Manager\obj\Debug\net6.0\ref\MyWebApi.Manager.dll
